@@ -65,4 +65,11 @@ public abstract class Command {
     public void setTargetIndex(int targetIndex) {
         this.targetIndex = targetIndex;
     }
+    
+    /**
+     * Returns true if a command changes the data,
+     * returns flase if a command does not.
+     */
+    public abstract boolean isMutating();
+    
 }
